@@ -1,0 +1,25 @@
+create table marcas (
+	"id" serial primary key,
+	"Nome_marcas" varchar(50),
+	"Codigo_marcas" varchar(50)
+)
+create table marcasFabricacao (
+	"id" serial primary key,
+	"Codigo_marcas" varchar(50),
+	"Ano_Fabricacao" int
+)
+create table anofabricacaomodelo (
+	"id" serial primary key,
+	"Codigo_marcas" varchar(50),
+	"Ano_Fabricacao" int,
+	"AnoModelo" int,
+	"Anomodelo1" int
+)
+create table modelo (
+"id" serial primary key,
+	"Codigo_marcas" varchar(50),
+	"Ano_Fabricacao" int,
+	"AnoModelo" int,
+	"Anomodelo1" int,
+	"modelo_carro" varchar(50)
+)
